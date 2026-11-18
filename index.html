@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD SADIQUE AI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+ background:#080b18;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:20px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ background:#10152a;
+ border-bottom:1px solid #292d50;
+}
+.logo{
+ font-size:23px;
+ font-weight:bold;
+ color:#a78bfa;
+}
+nav a{
+ color:white;
+ text-decoration:none;
+ margin-left:12px;
+ font-size:13px;
+}
+.hero{
+ text-align:center;
+ padding:75px 18px;
+ background:linear-gradient(135deg,#171044,#101b42,#080b18);
+}
+.hero h1{
+ font-size:38px;
+ margin-bottom:15px;
+}
+.hero h1 span{color:#a78bfa}
+.hero p{
+ color:#c3c6dc;
+ line-height:1.7;
+}
+.btn{
+ display:inline-block;
+ margin-top:25px;
+ padding:13px 25px;
+ border-radius:30px;
+ background:linear-gradient(90deg,#7047ff,#168bff);
+ color:white;
+ text-decoration:none;
+ font-weight:bold;
+ border:none;
+ cursor:pointer;
+}
+section{padding:35px 18px}
+h2{text-align:center;margin-bottom:25px}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+ gap:15px;
+ max-width:900px;
+ margin:auto;
+}
+.card{
+ background:#151b32;
+ border:1px solid #292f54;
+ padding:23px 14px;
+ border-radius:15px;
+ text-align:center;
+}
+.card .emoji{font-size:35px}
+.card h3{margin:12px 0}
+.card p{
+ font-size:13px;
+ color:#b7bdd2;
+ line-height:1.5;
+}
+.card button{
+ background:#7047ff;
+ color:white;
+ border:0;
+ padding:10px 15px;
+ border-radius:20px;
+ margin-top:15px;
+}
+.about{
+ text-align:center;
+ background:#11172c;
+ line-height:1.8;
+}
+footer{
+ text-align:center;
+ padding:25px;
+ color:#aeb4ca;
+ font-size:13px;
+}
+input,textarea{
+ width:100%;
+ padding:13px;
+ margin-top:12px;
+ border-radius:9px;
+ border:1px solid #343b60;
+ background:#0c1225;
+ color:white;
+}
+.contact{
+ max-width:500px;
+ margin:auto;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">MD SADIQUE AI</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#tools">AI Tools</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h1>Welcome To <span>MD SADIQUE AI</span></h1>
+<p>आपकी अपनी AI दुनिया में स्वागत है।<br>
+यहाँ मिलेंगे नए AI Tools और Creative Ideas.</p>
+<a class="btn" href="#tools">Explore AI Tools</a>
+</div>
+
+<section id="tools">
+<h2>✨ Our AI Tools</h2>
+<div class="grid">
+
+<div class="card">
+<div class="emoji">🖼️</div>
+<h3>AI Image</h3>
+<p>AI इमेज बनाने के लिए यहाँ जाएँ।</p>
+<button onclick="alert('AI Image Generator जल्द जोड़ा जाएगा!')">Open Tool</button>
+</div>
+
+<div class="card">
+<div class="emoji">🎬</div>
+<h3>AI Video</h3>
+<p>AI वीडियो बनाने का टूल।</p>
+<button onclick="alert('AI Video Generator जल्द जोड़ा जाएगा!')">Open Tool</button>
+</div>
+
+<div class="card">
+<div class="emoji">✍️</div>
+<h3>AI Writer</h3>
+<p>अपनी कहानी और टेक्स्ट लिखें।</p>
+<button onclick="writer()">Open Tool</button>
+</div>
+
+<div class="card">
+<div class="emoji">🎨</div>
+<h3>AI Design</h3>
+<p>नए डिजाइन और आइडिया।</p>
+<button onclick="alert('AI Design Tool जल्द जोड़ा जाएगा!')">Open Tool</button>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About MD SADIQUE AI</h2>
+<p>MD SADIQUE AI एक आधुनिक AI वेबसाइट है।</p>
+<p>हमारा उद्देश्य AI की दुनिया को आसान बनाना है।</p>
+</section>
+
+<section>
+<h2>Contact Us</h2>
+<div class="contact">
+<input type="text" placeholder="आपका नाम">
+<input type="email" placeholder="आपका Email">
+<textarea rows="4" placeholder="अपना संदेश लिखें"></textarea>
+<button class="btn" onclick="alert('धन्यवाद! आपका संदेश तैयार है।')">Send Message</button>
+</div>
+</section>
+
+<footer>
+© 2026 MD SADIQUE AI | All Rights Reserved
+</footer>
+
+<script>
+function writer(){
+let text=prompt("अपना टेक्स्ट लिखें:");
+if(text) alert("आपका टेक्स्ट: "+text);
+}
+</script>
+
+</body>
+</html>
+
